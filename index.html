@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+                <span id="usernameError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span id="emailError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span id="passwordError" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+
+            <div class="form-group">
+                <a href="#" id="forgotPasswordLink">Forgot Password?</a>
+            </div>
+
+            <div class="form-group">
+                <a href="/register">Register</a>
+            </div>
+        </form>
+
+        <div class="social-login">
+            <button id="googleLogin">Login with Google</button>
+            <button id="facebookLogin">Login with Facebook</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
